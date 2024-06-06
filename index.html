@@ -25,7 +25,7 @@
     #txtContainer {
       display: flex;
       height: 100%;
-      width: 80%;
+      width: 95%;
       margin: 0 auto;
       perspective: 450px;
       z-index: 2;
@@ -36,11 +36,11 @@
       line-height: 1.5em;
       padding: 50px;
       position: absolute;
-      width: 80%;
+      width: 90%;
       margin: 0 auto;
       transform-style: preserve-3d;
       transform: rotateX(20deg);
-      animation: scroll 50s linear forwards infinite;
+      animation: scroll 70s linear forwards infinite;
     }
     h1,h2 {
       text-align: center;
@@ -76,6 +76,14 @@
       position: relative;
       margin: 0 auto;
       top: 92%;
+    }
+    @media only screen and (max-width: 600px) {
+      #txtWrapper{
+        font-size: 18px !important;
+      }
+      a {
+        font-size: 16px !important;
+      }
     }
     </style>
     <script type="text/javascript">
@@ -118,7 +126,7 @@
          window.getComputedStyle(lnkElem).visibility === "visible" ? 
          lnkElem.style.visibility = "hidden" : 
          lnkElem.style.visibility = "visible"       
-        }, 25000);
+        }, 35000);
       };
 
     </script>
