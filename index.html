@@ -40,7 +40,7 @@
       margin: 0 auto;
       transform-style: preserve-3d;
       transform: rotateX(20deg);
-      animation: scroll 70s linear forwards infinite;
+      animation: scroll 40s linear forwards infinite;
     }
     h1,h2 {
       text-align: center;
@@ -64,7 +64,7 @@
     }
     @keyframes scroll {
       from { top: 50%; transform: translateZ(0) rotateX(35deg); }
-      to { top: -4500px; transform: translateZ(-2500px) rotateX(36deg); }
+      to { top: -350vh; transform: translateZ(-300vh) rotateX(36deg); }
     }
     a {
       font-family: 'Roboto';
@@ -126,7 +126,7 @@
          window.getComputedStyle(lnkElem).visibility === "visible" ? 
          lnkElem.style.visibility = "hidden" : 
          lnkElem.style.visibility = "visible"       
-        }, 35000);
+        }, 20000);
       };
 
     </script>
